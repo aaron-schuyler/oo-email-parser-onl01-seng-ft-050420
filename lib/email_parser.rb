@@ -4,7 +4,7 @@ class EmailAddressParser
     @list = unparsed
   end
   def parse 
-    return @list.split(/[,*\s]/).reject { |v| v.empty? }
+    return @list.split(/[,*\s]/).uniq.reject { |v| v.empty? }
     
   end
 end
