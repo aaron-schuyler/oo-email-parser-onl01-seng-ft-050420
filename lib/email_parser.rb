@@ -4,6 +4,6 @@ class EmailAddressParser
     @list = unparsed
   end
   def parse 
-    return @list.split(/[,\s] /)
+    return @list.split(/[,*\s]/)
   end
 end
